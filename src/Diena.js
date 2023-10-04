@@ -1,13 +1,15 @@
 import Stunda from "./Stunda";
 
-function Diena() {
+function Diena(props) {
+    const stundasJSX = props.stunda.map((stunda) => {
+        return <Stunda nosaukums={stunda} />
+    });
     return (
         <>
-    <p>te diena</p>
-    <Stunda nosaukums="sports pie Klintas" />
-    <Stunda nosaukums="dabaszinibas pie ucika"/>
-    <Stunda nosaukums="krievu valoda pie stalina"/>
-    <Stunda nosaukums="vacu valoda pie hitlera"/>
+<h2>{props.diena}</h2>
+<ul>
+ {stundasJSX}
+    </ul>
     </>
-    )}
+    )};
    export default Diena;
