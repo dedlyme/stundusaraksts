@@ -1,8 +1,10 @@
+import styles from "./Stunda.module.css";
+
 function Stunda(props) {
-    return <p>
-        <ul>
-<li>{props.nosaukums}</li>
-        </ul>
-        </p>;
-   }
+    return (
+        <li className={styles.violets}>
+            {props.nosaukums}
+        </li>
+    )
+    }
    export default Stunda;
