@@ -5,5 +5,9 @@ import "./global.css";
 
 const noDOM = document.getElementById("root");
 const root = ReactDOM.createRoot(noDOM);
-root.render(<App />);
+root.render(
+<React.StrictMode>
+<App />
+</React.StrictMode>
+);
 
